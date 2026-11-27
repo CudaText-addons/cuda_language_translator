@@ -1,3 +1,6 @@
+2026.11.27
++ cmd "Replace selected text"
+
 2026.10.16
 * adapted to python 3.8: thx @badrelmers
 
