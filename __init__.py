@@ -213,6 +213,17 @@ class Command:
 
         return None
 
+    def res2rep(self):
+        translated = self.translate_with_selection()
+        if translated:
+            carets = ed.get_carets()
+            x0, y0, x1, y1 = carets[0]
+            if (y0, x0)>(y1, x1):
+                x0, y0, x1, y1 = x1, y1, x0, y0
+            ed.set_caret(x0, y0)
+            ed.replace(x0, y0, x1, y1, translated)
+            self.actc(translated)
+
     def res2tab(self):
         translated = self.translate_with_selection()
         if translated:

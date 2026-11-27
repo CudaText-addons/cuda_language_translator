@@ -7,25 +7,30 @@ homepage=https://github.com/ildarkhasanshin/cuda_language_translator
 
 [item1]
 section=commands
+caption=Language Translator\Show translation in\Replace selected text
+method=res2rep
+
+[item2]
+section=commands
 caption=Language Translator\Show translation in\New tab
 method=res2tab
 
-[item2]
+[item3]
 section=commands
 caption=Language Translator\Show translation in\Message-box
 method=res2msgbox
 
-[item3]
+[item4]
 section=commands
 caption=Language Translator\Show translation in\Clipboard
 method=res2clipboard
 
-[item4]
+[item5]
 section=commands
 caption=Language Translator\Show translation in\Status-bar
 method=res2statusbar
 
-[item5]
+[item6]
 section=commands
 caption=Language Translator\Show config
 method=config
